@@ -7,7 +7,7 @@ Summary(pl):	Proste narzêdzie do ustawiania restrykcji u¿ywania wirtualnych host
 Name:		bindprivs
 Version:	0.6
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Networking/Utilities
 Source0:	http://toxygen.net/bindprivs/%{name}-%{version}.tar.gz
 # Source0-md5:	0846e1094480728440ec46d273cc0815
