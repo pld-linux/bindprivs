@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_dist_kernel	- without distribution kernel
+%bcond_without  dist_kernel	# without distribution kernel
 #
 Summary:	Little silly kernel module and utility to restrict virtual hosts
 Summary(pl):	Proste narzêdzie do ustawiania restrykcji u¿ywania wirtualnych hostów
@@ -11,7 +11,7 @@ License:	GPL
 Group:		Networking/Utilities
 Source0:	http://toxygen.net/bindprivs/%{name}-%{version}.tar.gz
 # Source0-md5:	0846e1094480728440ec46d273cc0815
-%{!?_without_dist_kernel:BuildRequires: kernel-headers}
+%{?with_dist_kernel:BuildRequires: kernel-headers}
 URL:		http://toxygen.net/bindprivs/
 BuildRequires:  %{kgcc_package}
 BuildRequires:  rpmbuild(macros) >= 1.118
@@ -31,7 +31,7 @@ temat u¿ywania go mo¿na znale¼æ w bindprivs.conf(5) oraz bpset(8).
 Summary:	bindprivs Linux kernel module
 Summary(pl):	Modu³ j±dra Linuksa bindprivs
 Group:		Base/Kernel
-%{!?_without_dist_kernel:%requires_releq_kernel_up}
+%{?with_dist_kernel:%requires_releq_kernel_up}
 Requires(post,postun):	/sbin/depmod
 
 %description -n kernel-misc-bindprivs
@@ -47,7 +47,7 @@ u¿ytkowników.
 Summary:	bindprivs Linux SMP kernel module
 Summary(pl):	Modu³ j±dra Linuksa SMP bindprivs
 Group:		Base/Kernel
-%{!?_without_dist_kernel:%requires_releq_kernel_smp}
+%{?with_dist_kernel:%requires_releq_kernel_smp}
 Requires(post,postun):	/sbin/depmod
 
 %description -n kernel-smp-misc-bindprivs
