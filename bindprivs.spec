@@ -20,7 +20,7 @@ details.
 %description -l pl
 To prosty modu³ j±dra s³u¿±cy do ograniczenia u¿ywania wirtualnych
 hostów dla poszczególnych u¿ytkowników. Informacje na temat u¿ywania
-go mo¿na znale¼æ w bindprivs.conf(5) oraz bpset(8). 
+go mo¿na znale¼æ w bindprivs.conf(5) oraz bpset(8).
 
 %prep
 %setup -q
