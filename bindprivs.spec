@@ -26,7 +26,8 @@ go mo¿na znale¼æ w bindprivs.conf(5) oraz bpset(8).
 %setup -q
 
 %build
-%{__make} CC="%{__cc} %{rpmcflags} -Wall"
+%{__make} \
+	CFLAGS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
