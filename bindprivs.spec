@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without  dist_kernel	# without distribution kernel
+%bcond_without	dist_kernel	# without distribution kernel
 #
 Summary:	Little silly kernel module and utility to restrict virtual hosts
 Summary(pl):	Proste narzêdzie do ustawiania restrykcji u¿ywania wirtualnych hostów
@@ -13,8 +13,8 @@ Source0:	http://toxygen.net/bindprivs/%{name}-%{version}.tar.gz
 # Source0-md5:	0846e1094480728440ec46d273cc0815
 %{?with_dist_kernel:BuildRequires: kernel-headers}
 URL:		http://toxygen.net/bindprivs/
-BuildRequires:  %{kgcc_package}
-BuildRequires:  rpmbuild(macros) >= 1.118
+BuildRequires:	%{kgcc_package}
+BuildRequires:	rpmbuild(macros) >= 1.118
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
