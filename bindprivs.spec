@@ -4,12 +4,12 @@
 Summary:	Little silly kernel module can be used to restrict virtual hosts
 Summary(pl):	Proste narzêdzie do ustawiania restrykcji u¿ywania wirtualnych hostów
 Name:		bindprivs
-Version:	0.5
+Version:	0.6
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
 Source0:	ftp://bzium.eu.org/pub/%{name}-%{version}.tar.gz
-# Source0-md5:	55919a2965a2f4a8de774e44d1351e1e
+# Source0-md5:	0846e1094480728440ec46d273cc0815
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
