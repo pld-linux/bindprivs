@@ -9,9 +9,10 @@ Version:	0.6
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	ftp://bzium.eu.org/pub/%{name}-%{version}.tar.gz
+Source0:	http://toxygen.net/bindprivs/%{name}-%{version}.tar.gz
 # Source0-md5:	0846e1094480728440ec46d273cc0815
 %{!?_without_dist_kernel:BuildRequires: kernel-headers}
+URL:		http://toxygen.net/bindprivs/
 BuildRequires:  %{kgcc_package}
 BuildRequires:  rpmbuild(macros) >= 1.118
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
