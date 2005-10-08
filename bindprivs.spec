@@ -131,7 +131,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/bp*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/bindprivs.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/bindprivs.conf
 %{_mandir}/man?/*
 
 %files -n kernel-misc-bindprivs
