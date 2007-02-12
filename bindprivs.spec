@@ -3,7 +3,7 @@
 %bcond_without	dist_kernel	# without distribution kernel
 #
 Summary:	Little silly kernel module and utility to restrict virtual hosts
-Summary(pl.UTF-8):   Proste narzędzie do ustawiania restrykcji używania wirtualnych hostów
+Summary(pl.UTF-8):	Proste narzędzie do ustawiania restrykcji używania wirtualnych hostów
 Name:		bindprivs
 Version:	0.6
 Release:	1
@@ -29,7 +29,7 @@ temat używania go można znaleźć w bindprivs.conf(5) oraz bpset(8).
 
 %package -n kernel-misc-bindprivs
 Summary:	bindprivs Linux kernel module
-Summary(pl.UTF-8):   Moduł jądra Linuksa bindprivs
+Summary(pl.UTF-8):	Moduł jądra Linuksa bindprivs
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
 Requires(post,postun):	/sbin/depmod
@@ -45,7 +45,7 @@ użytkowników.
 
 %package -n kernel-smp-misc-bindprivs
 Summary:	bindprivs Linux SMP kernel module
-Summary(pl.UTF-8):   Moduł jądra Linuksa SMP bindprivs
+Summary(pl.UTF-8):	Moduł jądra Linuksa SMP bindprivs
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_smp}
 Requires(post,postun):	/sbin/depmod
