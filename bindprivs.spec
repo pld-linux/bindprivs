@@ -3,7 +3,7 @@
 %bcond_without	dist_kernel	# without distribution kernel
 #
 Summary:	Little silly kernel module and utility to restrict virtual hosts
-Summary(pl):	Proste narzÍdzie do ustawiania restrykcji uøywania wirtualnych hostÛw
+Summary(pl.UTF-8):   Proste narzƒôdzie do ustawiania restrykcji u≈ºywania wirtualnych host√≥w
 Name:		bindprivs
 Version:	0.6
 Release:	1
@@ -22,14 +22,14 @@ bindprivs is a little silly kernel module can be used to restrict
 virtual host to some particular users. Read bindprivs.conf(5) and
 bpset(8) for more details.
 
-%description -l pl
-bindprivs to prosty modu≥ j±dra s≥uø±cy do ograniczenia uøywania
-wirtualnych hostÛw dla poszczegÛlnych uøytkownikÛw. Informacje na
-temat uøywania go moøna znaleºÊ w bindprivs.conf(5) oraz bpset(8).
+%description -l pl.UTF-8
+bindprivs to prosty modu≈Ç jƒÖdra s≈Çu≈ºƒÖcy do ograniczenia u≈ºywania
+wirtualnych host√≥w dla poszczeg√≥lnych u≈ºytkownik√≥w. Informacje na
+temat u≈ºywania go mo≈ºna znale≈∫ƒá w bindprivs.conf(5) oraz bpset(8).
 
 %package -n kernel-misc-bindprivs
 Summary:	bindprivs Linux kernel module
-Summary(pl):	Modu≥ j±dra Linuksa bindprivs
+Summary(pl.UTF-8):   Modu≈Ç jƒÖdra Linuksa bindprivs
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_up}
 Requires(post,postun):	/sbin/depmod
@@ -38,14 +38,14 @@ Requires(post,postun):	/sbin/depmod
 bindprivs Linux kernel module - a little silly kernel module which can
 be used to restrict virtual host to some particular users.
 
-%description -n kernel-misc-bindprivs -l pl
-Modu≥ j±dra Linuksa bindprivs - prosty modu≥ j±dra s≥uø±cy do
-ograniczenia uøywania wirtualnych hostÛw dla poszczegÛlnych
-uøytkownikÛw.
+%description -n kernel-misc-bindprivs -l pl.UTF-8
+Modu≈Ç jƒÖdra Linuksa bindprivs - prosty modu≈Ç jƒÖdra s≈Çu≈ºƒÖcy do
+ograniczenia u≈ºywania wirtualnych host√≥w dla poszczeg√≥lnych
+u≈ºytkownik√≥w.
 
 %package -n kernel-smp-misc-bindprivs
 Summary:	bindprivs Linux SMP kernel module
-Summary(pl):	Modu≥ j±dra Linuksa SMP bindprivs
+Summary(pl.UTF-8):   Modu≈Ç jƒÖdra Linuksa SMP bindprivs
 Group:		Base/Kernel
 %{?with_dist_kernel:%requires_releq_kernel_smp}
 Requires(post,postun):	/sbin/depmod
@@ -54,10 +54,10 @@ Requires(post,postun):	/sbin/depmod
 bindprivs Linux SMP kernel module - a little silly kernel module which
 can be used to restrict virtual host to some particular users.
 
-%description -n kernel-smp-misc-bindprivs -l pl
-Modu≥ j±dra Linuksa SMP bindprivs - prosty modu≥ j±dra s≥uø±cy do
-ograniczenia uøywania wirtualnych hostÛw dla poszczegÛlnych
-uøytkownikÛw.
+%description -n kernel-smp-misc-bindprivs -l pl.UTF-8
+Modu≈Ç jƒÖdra Linuksa SMP bindprivs - prosty modu≈Ç jƒÖdra s≈Çu≈ºƒÖcy do
+ograniczenia u≈ºywania wirtualnych host√≥w dla poszczeg√≥lnych
+u≈ºytkownik√≥w.
 
 %prep
 %setup -q
